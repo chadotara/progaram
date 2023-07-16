@@ -1,0 +1,196 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body { 
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+  
+  .header {
+    overflow: hidden;
+    background-color: #126cf4;
+    padding: 12px 30px;
+    font-size: 17px;
+    margin-right: 0px;
+  }
+  
+
+.container {
+    margin: auto;
+    margin-top: 30px;
+    border-top: 60px;
+    max-width: 700px;
+    width: 100%;
+    background-color: #8cafef;
+    padding: 25px 30px;
+    border-radius: 30px;
+    height: 820px;
+}
+
+
+
+
+.form {
+  padding: 30px 40px;
+}
+
+.form__control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form__control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form__control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px;
+  outline-color: #f91919;
+}
+
+.form__control.success input {
+  border-color: #2ecc71;
+}
+
+.form__control.error input {
+  border-color: #f91919;
+}
+
+.form__control i {
+  visibility: hidden;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+}
+
+.form__control.success i.fa-check-circle {
+  visibility: visible;
+  color: #2ecc71;
+}
+
+.form__control.error i.fa-exclamation-circle {
+  visibility: visible;
+  color: #f91919;
+}
+
+.form__control small {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.form__control.error small {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+
+.content form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 28px 0 12px 0;
+  }
+  
+  form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(500%);
+  }
+  
+  form .input-box span.details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+  }
+  .user-details .input-box input:focus,
+  .user-details .input-box input:valid{
+    
+  }
+   form .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+   }
+   form .category{
+     display: flex;
+     width: 80%;
+     margin: 14px 0 ;
+     justify-content: space-between;
+   }
+   form .category label{
+     display: flex;
+     align-items: center;
+     cursor: pointer;
+   }
+   form .category label .dot{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: #d9d9d9;
+    opacity: 5 ;
+  
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+  }
+   #dot-1:checked ~ .category label .one,
+   #dot-2:checked ~ .category label .two,
+   #dot-3:checked ~ .category label .three{
+    
+     border-color: #02152c;
+   }
+   
+   
+   form .button{
+     height: 45px;
+     margin: 35px 0
+   }
+   form .button input{
+     height: 100%;
+     width: 100%;
+     border-radius: 5px;
+     border: none;
+     color: #fff;
+     font-size: 18px;
+     font-weight: 500;
+     letter-spacing: 1px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     background: #112D4E
+   }
+   form .button input:hover{
+    /* transform: scale(0.99); */
+   background-color: #2360a7;
+    }
+  
+    label {
+      display: flex;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  input,
+  label {
+      margin: 0.4rem 0;
+  }
+  

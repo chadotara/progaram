@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>AJAX, JSON and PHP Example</title> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+</head> 
+<body> 
+	<button id="fetchData">Fetch Data</button> 
+	<div id="result"></div> 
+ 
+	<script> 
+		$(document).ready(function(){ 
+			$("#fetchData").click(function(){ 
+				$.ajax({ 
+					url: "getData.php", 
+					dataType: "json", 
+					success: function(data){ 
+						$("#result").html(data); 
+					} 
+				}); 
+			}); 
+		}); 
+	</script> 
+</body> 
+</html> 

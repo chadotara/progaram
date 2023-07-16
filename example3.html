@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <script type="text/javascript">
+        function swapit()
+        {
+            var a = document.images[0].src;
+            document.images[0].src=document.images[1].src;
+            document.images[1].src=a;
+        }
+    </script>
+</head>
+<body>
+    <img src="d.jpg" height="200" width="200" border="10"/>
+    <img src="shree-infotech-low-resolution-color-logo.jpeg" height="200" width="200" border="10"/><br>
+    <input type="button" value="swap images" onclick="swapit()"/>
+</body>
+</html>

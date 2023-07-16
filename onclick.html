@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onfunction</title>
+    
+    <!-- onblure -->
+    <script>
+        function myBlur() {
+          let x = document.getElementById("fname");
+          x.value = x.value.toUpperCase();
+        }
+        </script>
+    
+    <!-- onchange -->
+        <script>
+            function mychange() {
+              var x = document.getElementById("mySelect").value;
+              document.getElementById("demo").innerHTML = "You selected: " + x;
+            }
+            </script>
+    
+    <!-- onfocus -->
+    <script>
+        function myFocus() {
+          var x = document.getElementById("mySelect").value;
+          document.getElementById("demo").innerHTML = "You selected: " + x;
+        }
+        </script>
+        
+    <style>
+        .fc:focus{
+            background-color: rgb(122, 39, 132);
+        }
+    </style>
+    
+    <!-- onmouseout -->
+    <style>
+        a:onMouseover{
+            color: green;
+        }
+    </style>
+    <!-- onselect -->
+    <script>
+        function mySelect() {
+          alert("You selected some text!");
+        }
+        </script>
+    </style>
+    
+    <!-- onsubmit -->
+    <script>
+        function mysubmit() {
+          alert("The form was submitted");
+        }
+    </script>
+
+    <!-- onclick -->
+    <script>
+        function myFunction() {
+          document.getElementById("demo").innerHTML = "Hello World";
+        }
+    </script>
+
+    <!-- onMouseover -->
+    <script>
+        function bigImg(x) {
+          x.style.height = "500px";
+          x.style.width = "500px";
+        }
+        
+        function normalImg(x) {
+          x.style.height = "300px";
+          x.style.width = "300px";
+        }
+    </script>
+
+    <!-- ondblclick -->
+    <script>
+
+        function myFunction() {
+        document.getElementById("demo").innerHTML += "Hello World ";
+    }
+    </script>
+
+    <!-- onload -->
+    <script>
+        function myFunction() {
+          alert("Page is loaded");
+        }
+    </script>
+</head>
+<body>
+<!-- onblur -->
+Enter your name: <input type="text" id="fname" onblur="myBlur()"><br> <hr>
+
+<!-- onchange -->
+<p id="demo"></p>
+    <select id="mySelect" onchange="mychange()">
+        <option value="Audi">Audi</option>
+        <option value="BMW">BMW</option>
+        <option value="Mercedes">Mercedes</option>
+        <option value="Volvo">Volvo</option>
+      </select>
+    <input type="button" value="On Change" onchange="mychange()"> <br> <hr>
+
+    <!-- onfocus -->
+   On focus <input type="text" value="" class="fc"><br> <hr>
+
+   <!-- onmouseout -->
+   <a href="#"  onMouseover="this.bgColor='red'" onMouseout="this.bgColor='green'">hello</a> <br> <hr>
+    
+
+    <!-- onselect -->
+    Enter text<input type="text" value="enter text" onselect="mySelect()"><br> <hr>
+
+    <!-- onsubmit -->
+    <form action="/action_page.php" onsubmit="mysubmit()">
+    Enter name: <input type="text" name="fname">
+    <input type="submit" value="Submit">
+    </form> <br> <hr>
+
+  <!-- onunload -->
+    <input type="button" value="On Unload" onunload="myfunction()"> <hr>
+
+    <!-- onclick -->
+    <button onclick="myFunction()">Click me</button><br><hr>
+
+    <!-- onMouseover -->
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="shree-infotech-low-resolution-color-logo.jpeg" alt="Smiley" width="300px" height="300px"><br><hr>
+
+    <!-- ondblclick -->
+    <p ondblclick="myFunction()">Double-click this paragraph to trigger a function.</p>
+
+    <!-- onload -->
+    <body onload="myFunction()"></body>
+
+
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>title</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function del(btn){
+            
+            var i= btn.parentNode.parentNode.rowIndex;
+            document.getElementById("mytable").deletrow(i);
+
+        }
+    </script>
+
+    <table border="1" id="mytable">
+    <tr>
+        <td>wad</td>
+        <td><input type="button" value="delete" onclick="del(this)"></td>
+    </tr>
+    <tr>
+        <td>wtp</td>
+        <td><input type="button" value="delete" onclick="del(this)"></td>
+    </tr>
+    </table>
+    
+</body>
+</html>

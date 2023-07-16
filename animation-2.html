@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border-style: solid;
+            width: 200px;
+            height: 200px;
+            animation-name:bgcoloranimate;
+            animation-duration: 4s;
+            animation-timing-function:linear;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+        }
+        @keyframes bgcoloranimate{
+            0% { background-color: white; transform: rotatex(0deg);}
+            25% { background-color: red; transform: rotatex(90deg);}
+            50% { background-color: green; transform: rotatex(180deg);}
+            75% { background-color: yellow;transform: rotate(270deg);}
+            100% { background-color: blue;transform: rotatey(360deg);}
+        }
+        
+    
+    </style>
+</head>
+<body>
+    <div class=box>  SOME CONTENT</div>
+  
+
+</body>
+</html>

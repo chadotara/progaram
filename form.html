@@ -1,0 +1,87 @@
+<html>
+
+<head>
+    <title> Registartion page</title>
+</head>
+
+<body>
+    <h2 align="center">Grouping form data with filedset</h2>
+    <p align="center">the filed set element is used to group releted data in form , and the legend element defines
+        caption</p>
+    <from action="frame-set.html">
+        <fieldset>
+            <legend align="center">personal information</legend>
+            <table>
+                <tr>
+                    <td>
+                        first name:
+                    </td>
+                    <td> <input type="text" name="fname" style="font-size: 10pt;height: 26px;width: 200px; ;"></td>
+                </tr>
+                <tr>
+                    <td>
+                        Last name:
+                    </td>
+                    <td> <input type="text" name="lname" style="font-size: 10pt;height: 26px;width: 200px; ;"></td>
+                </tr>
+                <tr>
+                    <td>
+                        Email:
+                    </td>
+                    <td> <input type="email" name="email" style="font-size: 10pt;height: 26px;width: 200px; ;"></td>
+                </tr>
+                <tr>
+                    <td>
+                        address:
+                    </td>
+                    <td> <input type="text" name="address" style="font-size: 10pt;height: 26px;width: 200px; ;"></td>
+                </tr>
+                <tr>
+                    <td>
+                        contect number:
+                    </td>
+                    <td> <input type="text" name="cntno" style="font-size: 10pt;height: 26px;width: 200px; ;"></td>
+                </tr>
+                <tr>
+                    <td rowspan="3">
+                        Gender
+                    </td>
+                    <td> <input type="radio" name="gender" value="male" id="m1"><label for="m1">male</label></td>
+                </tr>
+                <tr>
+
+                    <td> <input type="radio" name="gender" value="female" id="f1"><label for="f1">female</label></td>
+                </tr>
+                <tr>
+                    <td> <input type="radio" name="gender" value="transgender" id="t1"><label
+                            for="t1">transgender</label></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox">i agree terms and condtion</td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="submit" style="height:25px; width:100px ;"></td>
+                </tr>
+                <td>
+                    <select name="cars">
+                        <option value="volvo">volvo</option>
+                        <option value="saab">saab</option>
+                    </select><br>
+                    <select>
+                        <optgroup label="Swadish cars">
+                            <option value="vovlo">volvo</option>
+                            <option value="saab">saab</option>
+                        </optgroup>
+                        <optgroup label="german cars">
+                            <option value="marcedes">volvo</option>
+                            <option value="sedan">saab</option>
+                        </optgroup>
+                    </select>
+                </td>
+
+            </table>
+        </fieldset>
+    </from>
+</body>
+
+</html>

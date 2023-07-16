@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <style type="text/css">
+        button{
+            width: 100px;
+            height: 100px;
+            margin-top: 50px;
+            margin-left: 500px;
+            background: rgb(24, 243, 71);
+            border: 10px solid rgb(79, 90, 3);
+        }
+        *{
+            background-color: bisque;
+        }
+
+
+    </style>
+	<script src=
+		"https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity=
+"sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+		crossorigin="anonymous">
+	</script>
+</head>
+
+<body>
+    <h1>this example of jquery using alert box </h1>
+	<button id="btn">Click me!</button>
+
+	<script>
+		$(document).ready(function () {
+			$("#btn").click(function () {
+				alert("This is example of jquery alert box!");
+			});
+		});
+	</script>
+</body>
+
+</html>

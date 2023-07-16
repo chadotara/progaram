@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    <p>the length of proprerty return the length of array</p>
+    <button onclick="myfunction()">try it </button>
+    <p id="demo"></p>
+    <script>
+        var fruits = ["banana","orange","apple","mango"];
+        document.getElementById("demo").innerHTML=fruits;
+        function myfunction(){
+            fruits.push("lemon")
+            document.getElementById("demo").innerHTML=fruits;
+        }
+    </script>
+    
+</body>
+</html>

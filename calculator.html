@@ -1,0 +1,56 @@
+<<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iphone Calculator</title>
+<link rel="stylesheet" href="cal.css">
+</head>
+<body>
+<div class="calculator_container">
+<div class="calculator_iphone">
+<!--display the number--><div class="calculator_input_display">
+<textarea cols="40" rows="7" id="calculator_input_Number_Previews"></textarea>
+<input type="text" id="calculator_input_Number">
+</div>
+<!--calculator button--><div class="calculator_button">
+<!--left button--><div class="calculator_button_left3">
+<div class="calculator_button_left3_Top">
+<!--clear the input box-->
+<div class="calculator_button_FixedSize_Top" id="Calculator_input_AC"><b>AC</b></div>
+<div class="calculator_button_FixedSize_Top" onclick="display('+/-')"><b>+/-</b></div>
+<div class="calculator_button_FixedSize_Top" onclick="display('%')"><b>%</b></div>
+</div>
+<!--middle button number-->
+<div class="calculator_button_left_Number">
+<div class="calculator_button_Fixedsize_Number" onclick="display('9')"><b>9</b></div>
+<div class="calculator_button_Fixedsize_Number" onclick="display('8')"><b>8</b></div>
+<div class="calculator_button_Fixedsize_Number" onclick="display('7')"><b>7</b></div>
+<div class="calculator_button_Fixedsize_Number" onclick="display('6')"><b>6</b></div>
+<div class="calculator_button_Fixedsize_Number" onclick="display('5')"><b>5</b></div>
+<div class="calculator_button_Fixedsize_Number" onclick="display('4')"><b>4</b></div>
+<div class="calculator_button_Fixedsize_Number" onclick="display('3')"><b>3</b></div>
+<div class="calculator_button_Fixedsize_Number" onclick="display('2')"><b>2</b></div>
+<div class="calculator_button_Fixedsize_Number" onclick="display('1')"><b>1</b></div>
+</div>
+<!--bottom button left-->
+<div class="calculator_button_left3_bottom">
+<div class="calculator_button_FixedSize_bottom" id="calculator_button_FixedSize_bottom_zero" onclick="display('0')"><b>0</b></div>
+<div class="calculator_button_FixedSize_bottom" onclick="display('.')"><b>.</b></div>
+</div>
+</div>
+<!--right button -->
+<div class="calculator_button_Right">
+<div class="calculator_button_FixedSize_Orange" onclick="display('/')"><b>&divide;</b></div>
+<div class="calculator_button_FixedSize_Orange" onclick="display('*')"><b>&times;</b></div>
+<div class="calculator_button_FixedSize_Orange" onclick="display('-')"><b>-</b></div>
+<div class="calculator_button_FixedSize_Orange" onclick="display('+')"><b>+</b></div>
+<!--answer button-->
+<div class="calculator_button_FixedSize_Orange" onclick="displaySolve()"><b>=</b></div>
+</div>
+</div></div>
+</div>
+<!--javascript file link html file-->
+<script src="Cal.js"></script>
+</body>
+</html>

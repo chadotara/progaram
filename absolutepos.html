@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <style>
+        div.relative{
+            background-color: aqua;
+            position: relative;
+            left: 0px;
+            top: 0px;
+            height: 600px;
+            border: 3px solid rgb(21, 112, 215);
+            width: 600px;
+        }
+        div.absolute{ 
+            background-color: blueviolet;
+            border: 3px solid gray;
+            height: 300px;
+            width: 300px;
+            top: 100px;
+            left: 200px;
+            bottom: 250px;
+            right: 300px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <h2>position: absolute;</h2>
+    <p>an element with postion absolute; is postioned relative to the nearest </p>
+    <div class="relative">this div element has postion:relative;
+        <div class="absolute">this div element has postion:relative;</div>
+    </div>
+    
+</body>
+</html>
